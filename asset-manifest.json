@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/React_ClockApp/static/css/main.6f6211c2.css",
+    "main.js": "/React_ClockApp/static/js/main.384b94c5.js",
+    "static/media/nightdesk.jpg": "/React_ClockApp/static/media/nightdesk.aa5161f57be5fd66b6a2.jpg",
+    "static/media/nighttan.jpg": "/React_ClockApp/static/media/nighttan.3c0b0370c31f5d57ff73.jpg",
+    "static/media/daydesk.jpg": "/React_ClockApp/static/media/daydesk.22955f116d799eadf917.jpg",
+    "static/media/daytab.jpg": "/React_ClockApp/static/media/daytab.bf5e0ad4afcb98a83b22.jpg",
+    "static/media/nightmob.jpg": "/React_ClockApp/static/media/nightmob.a9c730ff6f3e4a40519b.jpg",
+    "static/media/daymob.jpg": "/React_ClockApp/static/media/daymob.13c049fcfdc590ddcef0.jpg",
+    "static/media/icon-sun.svg": "/React_ClockApp/static/media/icon-sun.cb7a2aac3be7bf88b4cf17bd97d62fd2.svg",
+    "index.html": "/React_ClockApp/index.html",
+    "static/media/icon-moon.svg": "/React_ClockApp/static/media/icon-moon.83b9f0dbe53bfaab2e1c6dc344545e9c.svg",
+    "static/media/icon-arrow-up.svg": "/React_ClockApp/static/media/icon-arrow-up.9f27dbc98aef9217ffedf9388f4088d5.svg",
+    "static/media/icon-arrow-down.svg": "/React_ClockApp/static/media/icon-arrow-down.4d330a30a2190ce71512b306095fbf41.svg",
+    "main.6f6211c2.css.map": "/React_ClockApp/static/css/main.6f6211c2.css.map",
+    "main.384b94c5.js.map": "/React_ClockApp/static/js/main.384b94c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f6211c2.css",
+    "static/js/main.384b94c5.js"
+  ]
+}
