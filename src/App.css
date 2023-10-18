@@ -1,38 +1,198 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
-}
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-color: grey;
+  background-blend-mode: multiply;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url() */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#upper {
+  display: flex;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.day-mode {
+  background-image: url("./images/daydesk.jpg");
+}
+.night-mode {
+  background-image: url("./images/nightdesk.jpg");
+}
+.fhalf {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding: 5% 10px 5% 10%;
+}
+.time {
+  font-size: 12.5rem;
+
+  font-weight: 700;
+  line-height: 12.5rem;
+  /* 100% */
+  letter-spacing: -0.3125rem;
+}
+.bst {
+  font-size: 2.5rem;
+
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+.shalf {
+  position: relative;
+  height: 100vh;
+  width: 50%;
+}
+button {
+  width: 9.125rem;
+  height: 3.5rem;
+  background-color: white;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  border-radius: 28px;
+  color: #000;
+}
+.center {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
+button span {
+  width: 2.5rem;
+  height: 2.5rem;
 
-.App-link {
-  color: #61dafb;
+  background-color: #303030;
+  border-radius: 50%;
+  margin-left: 0.1875rem;
 }
+button span:hover,
+button span:hover {
+  background: #999;
+  cursor: pointer;
+}
+.toggled {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
+.toggled.day {
+  background: rgba(255, 255, 255, 0.75);
+  color: #303030;
+}
+.toggled.night {
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+}
+.div2 h3 {
+  display: flex;
+  align-items: center;
+}
+.toggled .b {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10%;
+}
+.toggled .p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 0.1875rem;
+}
+.toggled .h {
+  font-family: Inter;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+hr {
+  width: 1px;
+  height: 85%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  background: #303030;
+  align-self: center;
+}
+@media (max-width: 850px) {
+  html {
+    font-size: 13px;
   }
-  to {
-    transform: rotate(360deg);
+  .toggled .b {
+    padding-left: 7%;
+  }
+}
+@media (max-width: 768px) {
+  button {
+    bottom: 5%;
+    right:10%;
+  }
+  .day-mode {
+    background-image: url("./images/daytab.jpg");
+  }
+
+  .night-mode {
+    background-image: url("./images/nighttan.jpg");
+  }
+  .toggled .b {
+    padding-left: 5%;
+  }
+}
+@media (max-width: 690px) {
+  .toggled .b {
+    padding-left: 3%;
+  }
+  .smallb .h {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 690px) {
+  .smallb .h {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 560px) {
+  .time {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 475px) {
+  html {
+    font-size: 10px;
+  }
+  .toggled .p {
+    font-size: 1.5rem;
+  }
+  .day-mode {
+    background-image: url("./images/daymob.jpg");
+  }
+
+  .night-mode {
+    background-image: url("./images/nightmob.jpg");
+  }
+  .toggled .b {
+    width: 100vw;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    height: 50%;
+  }
+  .smallb {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .toggled {
+    flex-direction: column;
+    gap: 0px;
+  }
+  hr {
+    display: none;
   }
 }
